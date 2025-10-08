@@ -1,0 +1,23 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@theme {
+  --font-primary: "Montserrat", sans-serif;
+  --font-second: "Droid Serif";
+  --color-primary: #758b9d;
+  --color-sec: #000;
+}
+
+.container {
+  @apply px-[24px] md:px-[75px];
+}
+.com-text {
+  @apply font-primary text-primary;
+}
+
+.nav-list {
+  @apply font-primary text-primary text-[16px] font-light;
+}
+.hero-list-item {
+  @apply flex items-start justify-start gap-[28px] font-primary text-primary font-extralight text-[16px] leading-[130%];
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="#" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test</title>
+    <link rel="stylesheet" href="/src/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Droid+Serif"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ============== Header Start============== -->
+    <header class="bg-white">
+      <nav class="container m-auto">
+        <div class="wrapper flex justify-between items-center w-full h-[56px]">
+          <div class="">
+            <img
+              src="/logo/logo.svg"
+              alt="logo"
+              class="w-[110px] h-[32px] md:w-[180px] md:h-[auto]"
+            />
+          </div>
+          <div
+            id="nav-list"
+            class="hidden lg:flex flex-col lg:flex-row justify-center items-center gap-[28px] bg-white lg:bg-transparent absolute lg:static top-[56px] left-0 w-full lg:w-auto h-screen lg:h-[56px]"
+          >
+            <ul
+              class="flex flex-col lg:flex-row justify-between items-center gap-[27px]"
+            >
+              <li class="nav-list"><a href="#">What We Do</a></li>
+              <li class="nav-list"><a href="#">How We Work</a></li>
+              <li class="nav-list"><a href="#">About Us</a></li>
+              <li class="nav-list"><a href="#">Success Stories</a></li>
+              <li class="nav-list"><a href="#">Blog</a></li>
+            </ul>
+            <ul>
+              <li
+                class="font-primary font-semibold text-[16px] text-[#47a08a] px-[24px] py-[4px] border-2 border-[#47a08a] hover:cursor-pointer"
+              >
+                <a href="#">Get Started</a>
+              </li>
+            </ul>
+          </div>
+          <!-- mobile responsive -->
+          <div class="block lg:hidden" id="menuToggle">
+            <img
+              src="/icons/menu.png"
+              alt="icon"
+              class="w-[28px] h-[28px]"
+              id="isActive"
+            />
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- ============== Header End============== -->
+    <main>
+      <!-- ============= Hero Section Start ============= -->
+      <section class="bg-[#eaf0f7] py-40px md:py-[80px] lg:py-[100px]">
+        <div class="container mx-auto">
+          <div
+            class="wrapper flex flex-col-reverse lg:flex-row justify-between items-center"
+          >
+            <!-- hero-left part -->
+            <div>
+              <!-- hero-title -->
+              <h1
+                class="max-w-[600px] font-bold font-second text-[24px] md:text-[32px] lg:text-[50px] leading-[130%] mt-[24px] tracking-[2px] text-center lg:text-left"
+              >
+                Software development for businesses & founders launching
+                innovative products
+              </h1>
+              <!-- hero-list-items -->
+              <ul class="max-w-[632px] mt-[36px] flex flex-col gap-[22px]">
+                <li class="hero-list-item">
+                  <img src="/icons/check-circle-solid-blue.svg" alt="icon" />
+                  <span
+                    >Skilled in product strategy, design, & development
+                  </span>
+                </li>
+                <li class="hero-list-item">
+                  <img src="/icons/check-circle-solid-blue.svg" alt="icon" />
+                  <span
+                    >The smartest possible way to acquire a high-performing
+                    distributed team
+                  </span>
+                </li>
+                <li class="hero-list-item">
+                  <img src="/icons/check-circle-solid-blue.svg" alt="icon" />
+                  <span
+                    >Trusted by Founders and Fortune 500 businesses for
+                    cost-effective solutions
+                  </span>
+                </li>
+              </ul>
+              <!-- hero-button -->
+              <div class="mt-[36px] flex justify-center lg:justify-start">
+                <a
+                  href="#"
+                  class="font-primary font-medium text-[16px] text-white bg-[#2ab398] p-[12px] rounded-xs duration-300 hover:cursor-pointer hover:scale-105 active:scale-95"
+                >
+                  Get Started
+                </a>
+              </div>
+            </div>
+            <!-- hero right part -->
+            <div class="max-w-[450px] object-cover object-center">
+              <img src="/image/hero-team.svg" alt="image" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ============= Hero Section Start ============= -->
+    </main>
+    <script src="/src/main.js"></script>
+  </body>
+</html>
