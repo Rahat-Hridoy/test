@@ -7,7 +7,7 @@ let isOpen = false;
 menuToggle.addEventListener("click", () => {
   isOpen = !isOpen;
 
-  isActive.src = isOpen ? "/public/icons/close.png" : "/public/icons/menu.png";
+  isActive.src = isOpen ? "/icons/close.png" : "/icons/menu.png";
 
   navList.classList.toggle("hidden", !isOpen);
   navList.classList.toggle("flex", isOpen);
