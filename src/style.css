@@ -12,7 +12,7 @@
   @apply px-[24px] md:px-[75px];
 }
 .com-text {
-  @apply font-primary text-primary;
+  @apply font-primary font-medium text-[16px] text-[#5f7587]  tracking-[150%];
 }
 
 .nav-list {
@@ -20,4 +20,10 @@
 }
 .hero-list-item {
   @apply flex items-start justify-start gap-[28px] font-primary text-primary font-extralight text-[16px] leading-[130%];
+}
+.footer-col-title {
+  @apply font-primary text-[16px] text-white font-bold;
+}
+.footer-col-link {
+  @apply flex flex-col items-start gap-y-[16px] mt-[16px] font-extralight;
 }
