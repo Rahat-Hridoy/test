@@ -14,7 +14,9 @@
 .com-text {
   @apply font-primary font-medium text-[16px] text-[#5f7587]  tracking-[150%];
 }
-
+.dark-screen-pera {
+  @apply font-primary font-light text-[16px];
+}
 .nav-list {
   @apply font-primary text-primary text-[16px] font-light;
 }
