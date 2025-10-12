@@ -15,11 +15,20 @@
 .section-head {
   @apply font-second font-semibold text-[28px] md:text-[45px] text-head;
 }
+.section-head-light {
+  @apply font-second font-semibold text-[28px] md:text-[45px] text-white;
+}
 .section-head-desc {
   @apply font-primary font-bold text-[18px] md:text-[22px] text-head leading-[140%];
 }
+.section-head-desc-light {
+  @apply font-primary font-bold text-[18px] md:text-[22px] text-white leading-[140%];
+}
 .com-text {
   @apply font-primary font-medium text-[16px] text-[#5f7587]  tracking-[150%];
+}
+.com-text-light {
+  @apply font-primary font-medium text-[16px] text-white/90  tracking-[150%];
 }
 .dark-screen-pera {
   @apply font-primary font-light text-[16px];
