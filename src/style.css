@@ -7,10 +7,22 @@
   --color-primary: #758b9d;
   --color-sec: #000;
   --color-head: #1a1a1a;
+  --color-bgPrimary: #071546;
+  --color-bgSecond: #eaf0f7;
+  --color-bgThird: #1b1b1b;
 }
 
 .container {
   @apply px-[24px] md:px-[75px];
+}
+.section-padding {
+  @apply py-[40px] md:py-[80px] lg:py-[100px];
+}
+.hero-head {
+  @apply font-second font-bold text-[32px] md:text-[50px] lg:text-[72px] text-head text-center;
+}
+.hero-head-light {
+  @apply font-second font-bold text-[32px] md:text-[50px] lg:text-[72px] text-white text-center;
 }
 .section-head {
   @apply font-second font-semibold text-[28px] md:text-[45px] text-head text-center lg:text-left;
@@ -45,3 +57,10 @@
 .footer-col-link {
   @apply flex flex-col items-start gap-y-[16px] mt-[16px] font-extralight;
 }
+.com-btn-primary {
+  @apply font-primary text-[16px] text-[#2ab398] leading-[24px] bg-white p-4 hover:cursor-pointer active:scale-95 duration-200;
+}
+.com-btn-second {
+  @apply font-primary text-[16px] text-white leading-[24px] bg-[#2ab398] p-4 hover:cursor-pointer active:scale-95 duration-200;
+}
+/* About page */

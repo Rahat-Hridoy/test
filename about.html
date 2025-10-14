@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="#" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test</title>
+    <link rel="stylesheet" href="/src/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Droid+Serif"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ============== HEADER START============== -->
+    <header class="bg-white">
+      <nav class="container m-auto">
+        <div class="wrapper flex justify-between items-center w-full h-[56px]">
+          <div class="">
+            <a href="/"
+              ><img
+                src="/logo/logo.svg"
+                alt="logo"
+                class="w-[110px] h-[32px] md:w-[180px] md:h-[auto]"
+            /></a>
+          </div>
+          <div
+            id="nav-list"
+            class="hidden lg:flex flex-col lg:flex-row justify-center items-center gap-[28px] bg-white lg:bg-transparent absolute lg:static top-[56px] left-0 w-full lg:w-auto h-screen lg:h-[56px]"
+          >
+            <ul
+              class="flex flex-col lg:flex-row justify-between items-center gap-[27px]"
+            >
+              <li class="nav-list"><a href="#">What We Do</a></li>
+              <li class="nav-list">
+                <a href="/how_Work.html">How We Work</a>
+              </li>
+              <li class="nav-list">
+                <a href="/about.html">About Us</a>
+              </li>
+              <li class="nav-list"><a href="#">Success Stories</a></li>
+              <li class="nav-list"><a href="#">Blog</a></li>
+            </ul>
+            <ul>
+              <li
+                class="font-primary font-semibold text-[16px] text-[#47a08a] px-[24px] py-[4px] border-2 border-[#47a08a] hover:cursor-pointer"
+              >
+                <a href="#">Get Started</a>
+              </li>
+            </ul>
+          </div>
+          <!-- mobile responsive -->
+          <div class="block lg:hidden" id="menuToggle">
+            <img
+              src="/icons/menu.png"
+              alt="icon"
+              class="w-[28px] h-[28px]"
+              id="isActive"
+            />
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- =============== HEADER END=============== -->
+
+    <main>
+      <!-- =============== ABOUT-HERO SECTON START =============== -->
+      <section class="section-padding bg-bgPrimary">
+        <div class="contaner max-w-[770px] mx-auto">
+          <div class="wrapper px-4 lg:px-0">
+            <h1 class="hero-head-light">
+              Meet the Architects Behind Your Success
+            </h1>
+            <p class="com-text-light text-center">
+              Our Journey in SaaS Development Excellence
+            </p>
+            <div class="text-center mt-[64px]">
+              <a href="#" type="button" class="com-btn-second">Get Started</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =============== ABOUT-HERO SECTON END =============== -->
+
+      <!-- =============== OUR-STORY SECTION START =============== -->
+      <section class="section-padding">
+        <div class="container mx-auto">
+          <div
+            class="wrapper flex flex-col-reverse justify-center items-center gap-[32px] lg:flex-row lg:justify-between gap-x-[44px]"
+          >
+            <!-- article side -->
+            <div class="flex flex-col gap-[50px] w-full lg:max-w-1/2">
+              <div>
+                <h2 class="section-head">Our story</h2>
+                <p class="com-text pt-[24px]">
+                  After exiting our own SaaS, we built what was supposed to be a
+                  small dev shop serving the local Salt Lake City market.
+                  <br /><br />
+                  But after hearing tons of product development horror stories
+                  and having to rescue or speed up the work of other consulting
+                  firms, we decided to scale DevSquad from one to many squads.
+                  We began serving more business leaders and entrepreneurs -
+                  always keeping our high-performing team structure and our
+                  commitment to fast technology.
+                </p>
+              </div>
+              <div>
+                <h2 class="section-head">About us</h2>
+                <p class="com-text pt-[24px]">
+                  With offices in the United States and Brazil, we've grown to
+                  over 100 people working together on cross-functional teams of
+                  managers, UX designers, developers, DevOps, engineers and QA
+                  engineers. We've continued to win better and better talent and
+                  refine our expertise.
+                </p>
+              </div>
+            </div>
+            <!-- figure -->
+            <div class="w-full lg:max-w-1/2">
+              <img
+                src="/icons/planet_clock_lamp.svg"
+                alt="figure"
+                class="w-auto object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =============== OUR-STORY SECTION END =============== -->
+
+      <!-- =============== BATTLE-TESTED SECTION START =============== -->
+      <section class="section-padding bg-bgSecond">
+        <div class="container mx-auto">
+          <h2
+            class="section-head md:py-[22px] lg:py-[44px] max-w-[768px] !text-center mx-auto"
+          >
+            We’re a battle-tested group passionate about building great
+            products.
+          </h2>
+        </div>
+      </section>
+      <!-- =============== BATTLE-TESTED SECTION END =============== -->
+
+      <!-- =============== CORE-VALUE SECTION START =============== -->
+      <section class="section-padding !pb-0">
+        <div class="container mx-auto">
+          <div
+            class="wrapper flex flex-col md:flex-row justify-center items-start gap-[24px] md:gap-[44px] lg:gap-[60px]"
+          >
+            <!-- section-title -->
+            <div class="max-w-3/12">
+              <h2 class="section-head">Core values</h2>
+              <p class="com-text pt-[14px] md:pt-[18px]">
+                We own every product we touch, from strategy to QA testing and
+                roadmap updates. Our core values guide our approach.
+              </p>
+            </div>
+            <!-- core-value-cards -->
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[24px] md:gap-[44px] lg:gap-[60px]"
+            >
+              <!-- item -->
+              <div class="item">
+                <div>
+                  <img
+                    src="/icons/make-it-happen-2.svg"
+                    alt="icon"
+                    class="w-[60px] h-[60px] mx-auto md:mx-0"
+                  />
+                </div>
+                <div class="mt-[30px] lg:mt-[40px]">
+                  <h3 class="section-head !text-[24px]">Make it happen</h3>
+                  <p class="com-text mt-[10px] md:mt-[14px]">
+                    Plan what works, be ready for anything.
+                  </p>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="item">
+                <div>
+                  <img
+                    src="/icons/make-it-happen-2.svg"
+                    alt="icon"
+                    class="w-[60px] h-[60px] mx-auto md:mx-0"
+                  />
+                </div>
+                <div class="mt-[30px] lg:mt-[40px]">
+                  <h3 class="section-head !text-[24px]">Make it happen</h3>
+                  <p class="com-text mt-[10px] md:mt-[14px]">
+                    Plan what works, be ready for anything.
+                  </p>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="item">
+                <div>
+                  <img
+                    src="/icons/make-it-happen-2.svg"
+                    alt="icon"
+                    class="w-[60px] h-[60px] mx-auto md:mx-0"
+                  />
+                </div>
+                <div class="mt-[30px] lg:mt-[40px]">
+                  <h3 class="section-head !text-[24px]">Make it happen</h3>
+                  <p class="com-text mt-[10px] md:mt-[14px]">
+                    Plan what works, be ready for anything.
+                  </p>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="item">
+                <div>
+                  <img
+                    src="/icons/make-it-happen-2.svg"
+                    alt="icon"
+                    class="w-[60px] h-[60px] mx-auto md:mx-0"
+                  />
+                </div>
+                <div class="mt-[30px] lg:mt-[40px]">
+                  <h3 class="section-head !text-[24px]">Make it happen</h3>
+                  <p class="com-text mt-[10px] md:mt-[14px]">
+                    Plan what works, be ready for anything.
+                  </p>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="item">
+                <div>
+                  <img
+                    src="/icons/make-it-happen-2.svg"
+                    alt="icon"
+                    class="w-[60px] h-[60px] mx-auto md:mx-0"
+                  />
+                </div>
+                <div class="mt-[30px] lg:mt-[40px]">
+                  <h3 class="section-head !text-[24px]">Make it happen</h3>
+                  <p class="com-text mt-[10px] md:mt-[14px]">
+                    Plan what works, be ready for anything.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =============== CORE-VALUE SECTION END =============== -->
+
+      <!-- =============== PRODUCT-STRATEGY SECTION START =============== -->
+      <section class="section-padding relative">
+        <div
+          class="container mx-auto bg-bgPrimary !px-[87px] py-[64px] rounded-[40px]"
+        >
+          <div
+            class="wrapper flex flex-col-reverse lg:flex-row lg:justify-between items-center lg:gap-[60px]"
+          >
+            <!-- article part -->
+            <div class="lg:max-w-[568px]">
+              <h2 class="section-head-light">
+                Where product strategy meets expert execution
+              </h2>
+              <p class="com-text-light pt-[14px] md:pt-[20px]">
+                DevSquad's high performing product teams build business
+                software, consumer apps, and government tools. We offer strategy
+                that is always grounded in our experience of taking full
+                ownership of every product we touch. You get smart of product
+                planning, fully managed development, and proactive optimization.
+              </p>
+            </div>
+            <!-- figure -->
+            <div>
+              <img
+                src="/icons/product-strategy-execution.svg"
+                alt="figure"
+                class="object-cover"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-bgSecond absolute top-1/2 left-0 w-full h-1/2 -z-10"
+        ></div>
+      </section>
+      <!-- =============== PRODUCT-STRATEGY SECTION END =============== -->
+
+      <!-- =============== FOUNDER SECTION START =============== -->
+      <section class="section-padding bg-bgSecond !pt-[50px]">
+        <div class="container mx-auto">
+          <div class="wrapper flex flex-row justify-between gap-[64px]">
+            <!-- left-part description -->
+            <div class="max-w-[672px]">
+              <!-- title part -->
+              <div>
+                <h2 class="section-head">
+                  A note from our founder,<br />
+                  Phil Alves
+                </h2>
+                <h4 class="section-head-desc pt-[24px]">
+                  Providing Latin American developers with great income and
+                  opportunity.
+                </h4>
+              </div>
+              <!-- paragraph -->
+              <div class="grid grid-cols-1 lg:grid-cols-2 mt-12 gap-12">
+                <p class="com-text">
+                  In my late teens and early twenties I turned my SaaS product
+                  into the widest used Direct Sales CRM software in the
+                  Brazilian market and then sold it in 2010. <br /><br />
+
+                  In 2011, I moved from Londrina, Brazil to the Salt Lake City
+                  Area. For a short time, I served as a lead developer at a
+                  great company, but I missed managing a comprehensive team and
+                  making important product decisions. I started DevSquad, so I
+                  could bring the experience that I had managing a team and
+                  building a successful SaaS business to other entrepreneurs
+                  with business ideas that fill a market need.
+                  <br /><br />
+
+                  Since then, we’ve grown substantially. We’ve helped launch
+                  SaaS products for entrepreneurs that have gone on to make
+                  successful exits, and we’ve
+                </p>
+                <p class="com-text">
+                  built mission-critical products for enterprises and
+                  organizations as well as our own use cases. <br /><br />
+
+                  Throughout it all, we’ve relied on top-notch talent in Brazil
+                  and other parts of Latin America to work alongside our product
+                  strategists in our US office.
+                  <br /><br />
+
+                  For me, it’s significant to bring opportunity back to my home
+                  country. Our clients respect this as well. It’s really the
+                  best of both worlds. You can come and visit us in Utah. And
+                  you can rest assured that we’re finding the best talent in
+                  Latin America. Every developer works on our own internal
+                  projects for 1 – 3 months before they ever touch client work.
+                  That’s the real-life vetting or testing process that we stand
+                  by.
+                </p>
+              </div>
+            </div>
+            <!-- right-part image -->
+            <div>
+              <div>
+                <img
+                  src="./public/image/phil-alves-2.webp"
+                  alt="image"
+                  class="object-cover"
+                />
+              </div>
+              <div>
+                <p class="com-text pt-[24px]">
+                  When you partner with DevSquad, you help me bring more
+                  development work to Latin America, and you get Silicon
+                  Valley-style, customer-centric product management.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =============== FOUNDER SECTION END =============== -->
+
+      <!-- =============== TEAM SECTION START =============== -->
+      <section class="bg-[#2ab398] py-[60px] lg:py-[100px] relative">
+        <!-- <div
+          class="w-full h-[80px] bg-[#2ab398] absolute -top-10 left-0 -skew-3 overflow-hidden"
+        ></div> -->
+        <div class="container mx-auto">
+          <div class="wrapper max-w-[580px] mx-auto">
+            <h2 class="section-head-light !text-center">
+              Work with the customer-centric team that delivers
+            </h2>
+            <p class="section-head-desc-light pt-[32px] !text-center">
+              Invaluable agile team management experience. Simplified monthly
+              cost.
+            </p>
+            <div class="text-center w-full mt-[64px]">
+              <button
+                class="font-primary text-[16px] text-[#2ab398] leading-[24px] bg-white p-4 hover:cursor-pointer active:scale-95 duration-200"
+              >
+                Get Started
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =============== TEAM SECTION END =============== -->
+    </main>
+
+    <!-- ============= FOOTER SECTION START ============= -->
+    <footer class="bg-[#000] py-[40px] md:py-[80px] lg:py-[100px]">
+      <div class="container mx-auto">
+        <div
+          class="wrapper grid grid-cols-1 lg:grid-cols-[360px_1fr_auto_auto_1fr] justify-content-between items-start gap-5"
+        >
+          <!-- column-1  -->
+          <div>
+            <div>
+              <img
+                src="/logo/logo-white.svg"
+                alt="logo"
+                class="w-[160px] h-[40px]"
+              />
+            </div>
+            <h4
+              class="font-primary font-normal text-[24px] leading-[140%] text-white my-[32px]"
+            >
+              488 East Winchester St Suite 450, Murray, Utah 84107
+            </h4>
+            <p
+              class="font-primary text-[16px] leading-[140%] flex justify-start items-center gap-[10px] mb-[16px]"
+            >
+              <img src="/icons/phone-in-talk.svg" alt="icon" />
+              <span class="text-white"> +1 801 656 0470</span>
+            </p>
+            <p
+              class="font-primary text-[16px] leading-[140%] flex justify-start items-center gap-[10px]"
+            >
+              <img src="/icons/mail.svg" alt="icon" />
+              <span class="text-white"> info@devsquad.com</span>
+            </p>
+          </div>
+          <!-- column-2 -->
+          <div>
+            <h5 class="footer-col-title">Company</h5>
+            <ul class="footer-col-link">
+              <li class="font-primary text-sm text-white">
+                <a href="#">How we work</a>
+              </li>
+              <li class="font-primary text-sm text-white">
+                <a href="#">About us</a>
+              </li>
+              <li class="font-primary text-sm text-white">
+                <a href="#">Success Stories</a>
+              </li>
+              <li class="font-primary text-sm text-white">
+                <a href="#">Blog</a>
+              </li>
+            </ul>
+          </div>
+          <!-- column-3 -->
+          <div>
+            <h5 class="footer-col-title">Engagement Models</h5>
+            <ul class="footer-col-link">
+              <li class="font-primary text-sm text-white">
+                <a href="#">Dedicated Development Squad</a>
+              </li>
+              <li class="font-primary text-sm text-white">
+                <a href="#">Product Strategy and Design</a>
+              </li>
+            </ul>
+          </div>
+          <!-- column-4 -->
+          <div>
+            <h5 class="footer-col-title">Services</h5>
+            <ul class="footer-col-link">
+              <li class="font-primary text-sm text-white">
+                <a href="#">SaaS App Development</a>
+              </li>
+              <li class="font-primary text-sm text-white">
+                <a href="#">Mobile App Development</a>
+              </li>
+              <li class="font-primary text-sm text-white">
+                <a href="#">Web App Development</a>
+              </li>
+              <li class="font-primary text-sm text-white">
+                <a href="#">Custom Software</a>
+              </li>
+              <li class="font-primary text-sm text-white">
+                <a href="#">MVP Development</a>
+              </li>
+            </ul>
+          </div>
+          <!-- column-5 -->
+          <div>
+            <h5 class="footer-col-title">Technologies</h5>
+            <ul class="footer-col-link">
+              <li class="font-primary text-sm text-white">
+                <a href="#">Laravel</a>
+              </li>
+              <li class="font-primary text-sm text-white">
+                <a href="#">Vue js</a>
+              </li>
+              <li class="font-primary text-sm text-white">
+                <a href="#">Next.js</a>
+              </li>
+              <li class="font-primary text-sm text-white">
+                <a href="#">React</a>
+              </li>
+              <li class="font-primary text-sm text-white">
+                <a href="#">React Native</a>
+              </li>
+              <li class="font-primary text-sm text-white">
+                <a href="#">Electron</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <p
+            class="font-primary text-sm text-[#758b9d] mt-[32px] pt-[24px] border-t-1 border-[#758b9d]"
+          >
+            © 2025. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- ============= FOOTER SECTION END ============= -->
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
