@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="#" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test</title>
+    <link rel="stylesheet" href="/src/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Droid+Serif"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ============== HEADER START============== -->
+    <header class="bg-white">
+      <nav class="container m-auto">
+        <div class="wrapper flex justify-between items-center w-full h-[56px]">
+          <div class="">
+            <a href="/"
+              ><img
+                src="/logo/logo.svg"
+                alt="logo"
+                class="w-[110px] h-[32px] md:w-[180px] md:h-[auto]"
+            /></a>
+          </div>
+          <div
+            id="nav-list"
+            class="hidden lg:flex flex-col lg:flex-row justify-center items-center gap-[28px] bg-white lg:bg-transparent absolute lg:static top-[56px] left-0 w-full lg:w-auto h-screen lg:h-[56px]"
+          >
+            <ul
+              class="flex flex-col lg:flex-row justify-between items-center gap-[27px]"
+            >
+              <li class="nav-list"><a href="#">What We Do</a></li>
+              <li class="nav-list">
+                <a href="how_Work.html">How We Work</a>
+              </li>
+              <li class="nav-list">
+                <a href="about.html">About Us</a>
+              </li>
+              <li class="nav-list"><a href="#">Success Stories</a></li>
+              <li class="nav-list"><a href="blog.html">Blog</a></li>
+            </ul>
+            <ul>
+              <li
+                class="font-primary font-semibold text-[16px] text-[#47a08a] px-[24px] py-[4px] border-2 border-[#47a08a] hover:cursor-pointer"
+              >
+                <a href="#">Get Started</a>
+              </li>
+            </ul>
+          </div>
+          <!-- mobile responsive -->
+          <div class="block lg:hidden" id="menuToggle">
+            <img
+              src="/icons/menu.png"
+              alt="icon"
+              class="w-[28px] h-[28px]"
+              id="isActive"
+            />
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- =============== HEADER END=============== -->
+
+    <main>
+      <!-- =============== ABOUT-HERO SECTON START =============== -->
+      <section class="section-padding bg-bgPrimary">
+        <div class="contaner max-w-[770px] mx-auto">
+          <div class="wrapper px-4 lg:px-0">
+            <p class="com-text-light uppercase text-center">Blog</p>
+            <h1 class="section-head-light !text-center pt-3">
+              Insights, news & trends
+            </h1>
+          </div>
+        </div>
+      </section>
+      <!-- =============== ABOUT-HERO SECTON END =============== -->
+
+      <!-- =============== Blog TAB SECTION START ================ -->
+      <section>
+        <div class="container mx-auto">
+          <div class="wrapper">
+            <!-- Tabs Container -->
+            <div class="p-6 mb-8">
+              <div class="relative">
+                <!-- Left Arrow -->
+                <button
+                  id="leftArrow"
+                  class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white shadow-md rounded-full w-8 h-8 flex items-center justify-center transition-colors duration-300 opacity-0 pointer-events-none"
+                >
+                  <img
+                    src="/icons/left-chevron.png"
+                    alt="icon"
+                    class="w-[16px] h-[16px]"
+                  />
+                </button>
+
+                <!-- Right Arrow -->
+                <button
+                  id="rightArrow"
+                  class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white shadow-md rounded-full w-8 h-8 flex items-center justify-center transition-colors duration-300"
+                >
+                  <img
+                    src="/icons/right-arrow.png"
+                    alt="icon"
+                    class="w-[16px] h-[16px]"
+                  />
+                </button>
+
+                <!-- Tabs Container -->
+                <div
+                  id="tabsContainer"
+                  class="flex space-x-1 overflow-x-auto pb-2 hide-scrollbar mx-10"
+                >
+                  <button
+                    class="tab-button flex-shrink-0 px-4 py-2 text-sm font-medium rounded-lg bg-blue-500 text-white transition-all duration-300"
+                    data-tab="tab1"
+                  >
+                    Profile
+                  </button>
+                  <button
+                    class="tab-button flex-shrink-0 px-4 py-2 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-100 transition-all duration-300"
+                    data-tab="tab2"
+                  >
+                    <i class="fas fa-cog mr-2"></i>Settings
+                  </button>
+                  <button
+                    class="tab-button flex-shrink-0 px-4 py-2 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-100 transition-all duration-300"
+                    data-tab="tab3"
+                  >
+                    <i class="fas fa-bell mr-2"></i>Notifications
+                  </button>
+                  <button
+                    class="tab-button flex-shrink-0 px-4 py-2 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-100 transition-all duration-300"
+                    data-tab="tab4"
+                  >
+                    <i class="fas fa-lock mr-2"></i>Security
+                  </button>
+                  <button
+                    class="tab-button flex-shrink-0 px-4 py-2 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-100 transition-all duration-300"
+                    data-tab="tab5"
+                  >
+                    <i class="fas fa-credit-card mr-2"></i>Billing
+                  </button>
+                  <button
+                    class="tab-button flex-shrink-0 px-4 py-2 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-100 transition-all duration-300"
+                    data-tab="tab6"
+                  >
+                    <i class="fas fa-users mr-2"></i>Team
+                  </button>
+                  <button
+                    class="tab-button flex-shrink-0 px-4 py-2 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-100 transition-all duration-300"
+                    data-tab="tab7"
+                  >
+                    <i class="fas fa-chart-bar mr-2"></i>Analytics
+                  </button>
+                  <button
+                    class="tab-button flex-shrink-0 px-4 py-2 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-100 transition-all duration-300"
+                    data-tab="tab8"
+                  >
+                    <i class="fas fa-download mr-2"></i>Downloads
+                  </button>
+                  <button
+                    class="tab-button flex-shrink-0 px-4 py-2 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-100 transition-all duration-300"
+                    data-tab="tab9"
+                  >
+                    <i class="fas fa-history mr-2"></i>History
+                  </button>
+                  <button
+                    class="tab-button flex-shrink-0 px-4 py-2 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-100 transition-all duration-300"
+                    data-tab="tab10"
+                  >
+                    <i class="fas fa-bookmark mr-2"></i>Bookmarks
+                  </button>
+                  <button
+                    class="tab-button flex-shrink-0 px-4 py-2 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-100 transition-all duration-300"
+                    data-tab="tab9"
+                  >
+                    <i class="fas fa-history mr-2"></i>History
+                  </button>
+                  <button
+                    class="tab-button flex-shrink-0 px-4 py-2 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-100 transition-all duration-300"
+                    data-tab="tab10"
+                  >
+                    <i class="fas fa-bookmark mr-2"></i>Bookmarks
+                  </button>
+                  <button
+                    class="tab-button flex-shrink-0 px-4 py-2 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-100 transition-all duration-300"
+                    data-tab="tab9"
+                  >
+                    <i class="fas fa-history mr-2"></i>History
+                  </button>
+                  <button
+                    class="tab-button flex-shrink-0 px-4 py-2 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-100 transition-all duration-300"
+                    data-tab="tab10"
+                  >
+                    <i class="fas fa-bookmark mr-2"></i>Bookmarks
+                  </button>
+                  <button
+                    class="tab-button flex-shrink-0 px-4 py-2 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-100 transition-all duration-300"
+                    data-tab="tab9"
+                  >
+                    <i class="fas fa-history mr-2"></i>History
+                  </button>
+                  <button
+                    class="tab-button flex-shrink-0 px-4 py-2 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-100 transition-all duration-300"
+                    data-tab="tab10"
+                  >
+                    <i class="fas fa-bookmark mr-2"></i>Bookmarks
+                  </button>
+                </div>
+              </div>
+
+              <!-- Tab Contents -->
+              <div class="mt-6">
+                <!-- Tab 1 Content -->
+                <div id="tab1" class="tab-content">
+                  <div
+                    class="card-wrapper grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[32px]"
+                  >
+                    <!-- card -->
+                    <div
+                      class="card flex flex-col gap-3 border-0 rounded-t-[12px] overflow-hidden"
+                    >
+                      <div>
+                        <img
+                          src="/public/image/blog-card-1.png"
+                          alt="card-image"
+                        />
+                      </div>
+                      <div class="flex items-center gap-4">
+                        <p
+                          class="px-[8px] py-[4px] bg-red-400 rounded-full font-primary font-light text-sm text-black"
+                        >
+                          Comparison
+                        </p>
+                        <div class="w-[2px] h-full bg-gray-300"></div>
+                        <p class="font-primary font-light text-sm text-primary">
+                          9 Oct 2025
+                        </p>
+                      </div>
+                      <h4 class="section-head-desc">
+                        Retargeting vs Remarketing: What’s the Real Difference
+                        in 2025?
+                      </h4>
+                      <p class="com-text">
+                        Discover the key differences between retargeting and
+                        remarketing in 2025 and learn how to use
+                      </p>
+                      <div>
+                        <a
+                          href="#"
+                          class="font-primary font-extralight text-violet-400"
+                          >Read More
+                        </a>
+                      </div>
+                    </div>
+                    <!-- card -->
+                    <div
+                      class="card flex flex-col gap-3 border-0 rounded-t-[12px] overflow-hidden"
+                    >
+                      <div>
+                        <img
+                          src="/public/image/blog-card-1.png"
+                          alt="card-image"
+                        />
+                      </div>
+                      <div class="flex items-center gap-4">
+                        <p
+                          class="px-[8px] py-[4px] bg-red-400 rounded-full font-primary font-light text-sm text-black"
+                        >
+                          Comparison
+                        </p>
+                        <div class="w-[2px] h-full bg-gray-300"></div>
+                        <p class="font-primary font-light text-sm text-primary">
+                          9 Oct 2025
+                        </p>
+                      </div>
+                      <h4 class="section-head-desc">
+                        Retargeting vs Remarketing: What’s the Real Difference
+                        in 2025?
+                      </h4>
+                      <p class="com-text">
+                        Discover the key differences between retargeting and
+                        remarketing in 2025 and learn how to use
+                      </p>
+                      <div>
+                        <a
+                          href="#"
+                          class="font-primary font-extralight text-violet-400"
+                          >Read More
+                        </a>
+                      </div>
+                    </div>
+                    <!-- card -->
+                    <div
+                      class="card flex flex-col gap-3 border-0 rounded-t-[12px] overflow-hidden"
+                    >
+                      <div>
+                        <img
+                          src="/public/image/blog-card-1.png"
+                          alt="card-image"
+                        />
+                      </div>
+                      <div class="flex items-center gap-4">
+                        <p
+                          class="px-[8px] py-[4px] bg-red-400 rounded-full font-primary font-light text-sm text-black"
+                        >
+                          Comparison
+                        </p>
+                        <div class="w-[2px] h-full bg-gray-300"></div>
+                        <p class="font-primary font-light text-sm text-primary">
+                          9 Oct 2025
+                        </p>
+                      </div>
+                      <h4 class="section-head-desc">
+                        Retargeting vs Remarketing: What’s the Real Difference
+                        in 2025?
+                      </h4>
+                      <p class="com-text">
+                        Discover the key differences between retargeting and
+                        remarketing in 2025 and learn how to use
+                      </p>
+                      <div>
+                        <a
+                          href="#"
+                          class="font-primary font-extralight text-violet-400"
+                          >Read More
+                        </a>
+                      </div>
+                    </div>
+                    <!-- card -->
+                    <div
+                      class="card flex flex-col gap-3 border-0 rounded-t-[12px] overflow-hidden"
+                    >
+                      <div>
+                        <img
+                          src="/public/image/blog-card-1.png"
+                          alt="card-image"
+                        />
+                      </div>
+                      <div class="flex items-center gap-4">
+                        <p
+                          class="px-[8px] py-[4px] bg-red-400 rounded-full font-primary font-light text-sm text-black"
+                        >
+                          Comparison
+                        </p>
+                        <div class="w-[2px] h-full bg-gray-300"></div>
+                        <p class="font-primary font-light text-sm text-primary">
+                          9 Oct 2025
+                        </p>
+                      </div>
+                      <h4 class="section-head-desc">
+                        Retargeting vs Remarketing: What’s the Real Difference
+                        in 2025?
+                      </h4>
+                      <p class="com-text">
+                        Discover the key differences between retargeting and
+                        remarketing in 2025 and learn how to use
+                      </p>
+                      <div>
+                        <a
+                          href="#"
+                          class="font-primary font-extralight text-violet-400"
+                          >Read More
+                        </a>
+                      </div>
+                    </div>
+                    <!-- card -->
+                    <div
+                      class="card flex flex-col gap-3 border-0 rounded-t-[12px] overflow-hidden"
+                    >
+                      <div>
+                        <img
+                          src="/public/image/blog-card-1.png"
+                          alt="card-image"
+                        />
+                      </div>
+                      <div class="flex items-center gap-4">
+                        <p
+                          class="px-[8px] py-[4px] bg-red-400 rounded-full font-primary font-light text-sm text-black"
+                        >
+                          Comparison
+                        </p>
+                        <div class="w-[2px] h-full bg-gray-300"></div>
+                        <p class="font-primary font-light text-sm text-primary">
+                          9 Oct 2025
+                        </p>
+                      </div>
+                      <h4 class="section-head-desc">
+                        Retargeting vs Remarketing: What’s the Real Difference
+                        in 2025?
+                      </h4>
+                      <p class="com-text">
+                        Discover the key differences between retargeting and
+                        remarketing in 2025 and learn how to use
+                      </p>
+                      <div>
+                        <a
+                          href="#"
+                          class="font-primary font-extralight text-violet-400"
+                          >Read More
+                        </a>
+                      </div>
+                    </div>
+                    <!-- card -->
+                    <div
+                      class="card flex flex-col gap-3 border-0 rounded-t-[12px] overflow-hidden"
+                    >
+                      <div>
+                        <img
+                          src="/public/image/blog-card-1.png"
+                          alt="card-image"
+                        />
+                      </div>
+                      <div class="flex items-center gap-4">
+                        <p
+                          class="px-[8px] py-[4px] bg-red-400 rounded-full font-primary font-light text-sm text-black"
+                        >
+                          Comparison
+                        </p>
+                        <div class="w-[2px] h-full bg-gray-300"></div>
+                        <p class="font-primary font-light text-sm text-primary">
+                          9 Oct 2025
+                        </p>
+                      </div>
+                      <h4 class="section-head-desc">
+                        Retargeting vs Remarketing: What’s the Real Difference
+                        in 2025?
+                      </h4>
+                      <p class="com-text">
+                        Discover the key differences between retargeting and
+                        remarketing in 2025 and learn how to use
+                      </p>
+                      <div>
+                        <a
+                          href="#"
+                          class="font-primary font-extralight text-violet-400"
+                          >Read More
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- button -->
+                  <div class="mt-[64px] text-center">
+                    <a href="#" class="com-btn-second">Load More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <style>
+              .hide-scrollbar {
+                -ms-overflow-style: none; /* IE and Edge */
+                scrollbar-width: none; /* Firefox */
+              }
+              .hide-scrollbar::-webkit-scrollbar {
+                display: none; /* Chrome, Safari and Opera */
+              }
+
+              /* Smooth scrolling for the tabs container */
+              #tabsContainer {
+                scroll-behavior: smooth;
+              }
+            </style>
+          </div>
+        </div>
+      </section>
+      <!-- =============== Blog TAB SECTION END ================ -->
+    </main>
+
+    <!-- ============= FOOTER SECTION START ============= -->
+    <footer class="bg-[#000] py-[40px] md:py-[80px] lg:py-[100px]">
+      <div class="container mx-auto">
+        <div
+          class="wrapper grid grid-cols-1 lg:grid-cols-[360px_1fr_auto_auto_1fr] justify-content-between items-start gap-5"
+        >
+          <!-- column-1  -->
+          <div>
+            <div>
+              <img
+                src="/logo/logo-white.svg"
+                alt="logo"
+                class="w-[160px] h-[40px]"
+              />
+            </div>
+            <h4
+              class="font-primary font-normal text-[24px] leading-[140%] text-white my-[32px]"
+            >
+              488 East Winchester St Suite 450, Murray, Utah 84107
+            </h4>
+            <p
+              class="font-primary text-[16px] leading-[140%] flex justify-start items-center gap-[10px] mb-[16px]"
+            >
+              <img src="/icons/phone-in-talk.svg" alt="icon" />
+              <span class="text-white"> +1 801 656 0470</span>
+            </p>
+            <p
+              class="font-primary text-[16px] leading-[140%] flex justify-start items-center gap-[10px]"
+            >
+              <img src="/icons/mail.svg" alt="icon" />
+              <span class="text-white"> info@devsquad.com</span>
+            </p>
+          </div>
+          <!-- column-2 -->
+          <div>
+            <h5 class="footer-col-title">Company</h5>
+            <ul class="footer-col-link">
+              <li class="font-primary text-sm text-white">
+                <a href="#">How we work</a>
+              </li>
+              <li class="font-primary text-sm text-white">
+                <a href="#">About us</a>
+              </li>
+              <li class="font-primary text-sm text-white">
+                <a href="#">Success Stories</a>
+              </li>
+              <li class="font-primary text-sm text-white">
+                <a href="#">Blog</a>
+              </li>
+            </ul>
+          </div>
+          <!-- column-3 -->
+          <div>
+            <h5 class="footer-col-title">Engagement Models</h5>
+            <ul class="footer-col-link">
+              <li class="font-primary text-sm text-white">
+                <a href="#">Dedicated Development Squad</a>
+              </li>
+              <li class="font-primary text-sm text-white">
+                <a href="#">Product Strategy and Design</a>
+              </li>
+            </ul>
+          </div>
+          <!-- column-4 -->
+          <div>
+            <h5 class="footer-col-title">Services</h5>
+            <ul class="footer-col-link">
+              <li class="font-primary text-sm text-white">
+                <a href="#">SaaS App Development</a>
+              </li>
+              <li class="font-primary text-sm text-white">
+                <a href="#">Mobile App Development</a>
+              </li>
+              <li class="font-primary text-sm text-white">
+                <a href="#">Web App Development</a>
+              </li>
+              <li class="font-primary text-sm text-white">
+                <a href="#">Custom Software</a>
+              </li>
+              <li class="font-primary text-sm text-white">
+                <a href="#">MVP Development</a>
+              </li>
+            </ul>
+          </div>
+          <!-- column-5 -->
+          <div>
+            <h5 class="footer-col-title">Technologies</h5>
+            <ul class="footer-col-link">
+              <li class="font-primary text-sm text-white">
+                <a href="#">Laravel</a>
+              </li>
+              <li class="font-primary text-sm text-white">
+                <a href="#">Vue js</a>
+              </li>
+              <li class="font-primary text-sm text-white">
+                <a href="#">Next.js</a>
+              </li>
+              <li class="font-primary text-sm text-white">
+                <a href="#">React</a>
+              </li>
+              <li class="font-primary text-sm text-white">
+                <a href="#">React Native</a>
+              </li>
+              <li class="font-primary text-sm text-white">
+                <a href="#">Electron</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <p
+            class="font-primary text-sm text-[#758b9d] mt-[32px] pt-[24px] border-t-1 border-[#758b9d]"
+          >
+            © 2025. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- ============= FOOTER SECTION END ============= -->
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
